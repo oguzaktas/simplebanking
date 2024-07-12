@@ -13,6 +13,7 @@ import com.eteration.simplebanking.model.InsufficientBalanceException;
 import com.eteration.simplebanking.model.WithdrawalTransaction;
 import com.eteration.simplebanking.services.AccountService;
 
+import com.eteration.simplebanking.services.TransactionService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -34,6 +35,9 @@ class ControllerTests  {
  
     @Mock
     private AccountService service;
+
+    @Mock
+    private TransactionService transactionService;
 
     
     @Test
